@@ -1,0 +1,8 @@
+[Unit]
+Description=Touchpad Gesture Control
+
+[Service]
+ExecStart=/home/nico/.rvm/gems/ruby-2.6.2/bin/fusuma
+
+[Install]
+WantedBy=default.target

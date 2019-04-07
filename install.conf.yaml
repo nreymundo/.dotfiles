@@ -1,0 +1,23 @@
+- defaults:
+    links:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.xinitrc: xinitrc
+    ~/.Xresources: Xresources
+    ~/.profile: profile
+    ~/.bash_profile: profile
+    ~/.bashrc: bashrc
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.i3: i3
+    ~/.config: 
+      glob: true
+      path: config/*
+      relink: true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [./extra_linking.sh, Linking files not uploaded to the repo]
