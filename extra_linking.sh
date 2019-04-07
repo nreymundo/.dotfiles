@@ -20,3 +20,6 @@ fi
 
 # Rclone private settings
 [[ ! -f $CONFIG/rclone ]] && ln -s $SYNC/rclone $CONFIG/rclone
+
+# Symlinking gpg keyring
+[[ ! -f $HOME/.gnupg ]] && ln -s $SYNC/gnupg $HOME/.gnupg
