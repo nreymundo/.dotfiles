@@ -73,3 +73,4 @@ $RECYCLE.BIN/
 .owncloudsync.log
 private_sync
 config/qutebrowser/colors.yml
+vim/bundle
