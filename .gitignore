@@ -72,3 +72,4 @@ $RECYCLE.BIN/
 # Other stuff
 .owncloudsync.log
 private_sync
+config/qutebrowser/colors.yml
