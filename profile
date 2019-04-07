@@ -7,7 +7,6 @@ export BROWSER=/usr/bin/firefox
 export DOTFILES=$HOME/.dotfiles
 export SCRIPTS=$DOTFILES/scripts
 export CONFIG=$HOME/.config
-#export NODE_PATH=`npm root -g`
 
 # PATH stuff
 export PATH=$SCRIPTS:$PATH
