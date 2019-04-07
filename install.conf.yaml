@@ -20,4 +20,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [./extra_linking.sh, Linking files not uploaded to the repo]
+  - [bootstrapping/extra_linking.sh, Linking files not uploaded to the repo]
