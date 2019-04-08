@@ -1,3 +1,10 @@
+## Repo especific stuff I want to ignore
+.owncloudsync.log
+private_sync
+config/qutebrowser/colors.yml
+vim/bundle
+vim/.netrwhist
+
 
 ### Linux ###
 *~
@@ -68,13 +75,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/linux,macos,windows
-
-# Other stuff
-.owncloudsync.log
-private_sync
-
-config/wallpaper
-config/qutebrowser/colors.yml
-
-vim/bundle
-vim/.netrwhist
