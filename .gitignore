@@ -72,6 +72,9 @@ $RECYCLE.BIN/
 # Other stuff
 .owncloudsync.log
 private_sync
+
+config/wallpaper
 config/qutebrowser/colors.yml
+
 vim/bundle
 vim/.netrwhist
