@@ -12,6 +12,8 @@ export CONFIG=$HOME/.config
 export PATH=$SCRIPTS:$PATH
 ## Ruby
 export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+## Deduplicate PATH
+export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
 # Misc customization options
 ## Used for my pywal script to set the alpha value for URXVT
@@ -23,9 +25,3 @@ export LPASS_AGENT_TIMEOUT=0
 
 
 systemctl --user import-environment PATH
-
-# Source .bashrc explicitly if connected through SSH
-[[ -n "$SSH_CLIENT" ]] && source $HOME/.bashrc
-
-# Sets wallpaper on startup if the script exists. This step is ignored if connected through SSH
-[[ -f $SCRIPTS/set_wallpaper && ! -n "$SSH_CLIENT" ]] && set_wallpaper

@@ -8,7 +8,7 @@
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
     ~/.profile: profile
-    ~/.bash_profile: profile
+    ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.vim: vim
     ~/.vimrc: vimrc
