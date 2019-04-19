@@ -12,6 +12,8 @@ export CONFIG=$HOME/.config
 export PATH=$SCRIPTS:$PATH
 ## Ruby
 export PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+## NVM
+source /usr/share/nvm/init-nvm.sh
 ## Deduplicate PATH
 export PATH="$(perl -e 'print join(":", grep { not $seen{$_}++ } split(/:/, $ENV{PATH}))')"
 
