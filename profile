@@ -6,6 +6,7 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export BROWSER=/usr/bin/firefox
 export DOTFILES=$HOME/.dotfiles
 export SCRIPTS=$DOTFILES/scripts
+export I3_SCRIPTS=$SCRIPTS/i3blocks
 export CONFIG=$HOME/.config
 
 # PATH stuff
