@@ -1,4 +1,5 @@
 # Misc env variables
+export MAKEFLAGS="-j$(nproc)"
 export GPG_TTY=$(tty)
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export EDITOR=/usr/bin/vim
