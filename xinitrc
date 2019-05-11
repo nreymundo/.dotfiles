@@ -63,4 +63,5 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
+exec nvidia-settings --load-config-only
 exec $(get_session)
