@@ -219,7 +219,7 @@ for_window [class="Xfburn"] floating enable
 for_window [class="Nvidia-settings"] floating enable
 
 # switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
+# for_window [urgent=latest] focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
