@@ -2,6 +2,12 @@
 # ~/.bashrc
 #
 
+# Sourcing .bash_profile on each startup because fuck it
+if [ -f ~/.bash_profile ]; then
+	source ~/.bash_profile
+fi
+
+
 [[ $- != *i* ]] && return
 
 colors() {

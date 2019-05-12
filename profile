@@ -2,6 +2,7 @@
 export MAKEFLAGS="-j$(nproc)"
 export GPG_TTY=$(tty)
 export QT_QPA_PLATFORMTHEME="qt5ct"
+export TERM=xterm-color
 export TERMINAL=/usr/bin/termite
 export EDITOR=/usr/bin/vim
 export VISUAL=$EDITOR
