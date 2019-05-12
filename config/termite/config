@@ -4,7 +4,7 @@
 #bold_is_bright = true
 #clickable_url = true
 #dynamic_title = true
-font = InconsolataLGC Nerd Font Mono 11
+font = InconsolataLGC Nerd Font Mono 10
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -44,33 +44,33 @@ scrollback_lines = 10000
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = #dddcca
+foreground=#dbd1ca
 #foreground_bold = #ffffff
-#background = #0C0F12
+background=#0A0502
 
-# 20% background transparency (requires a compositor)
-background = rgba(00, 00, 00, 0.85)
+#20% background transparency (requires a compositor)
+#background = rgba(00, 00, 00, 0.85)
 
 # If unset, will reverse foreground and background
 #highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0='#1b121f'
-color1='#A98E60'
-color2='#D1AA57'
-color3='#66728B'
-color4='#857B89'
-color5='#748C9D'
-color6='#9DA0A1'
-color7='#e1ddcb'
-color8='#9d9a8e'
-color9='#A98E60'
-color10='#D1AA57'
-color11='#66728B'
-color12='#857B89'
-color13='#748C9D'
-color14='#9DA0A1'
-color15='#e1ddcb'
+color0='#0A0502'
+color1='#BF4142'
+color2='#9B675C'
+color3='#EF596D'
+color4='#CBA061'
+color5='#DC6796'
+color6='#5E91AC'
+color7='#dbd1ca'
+color8='#99928d'
+color9='#BF4142'
+color10='#9B675C'
+color11='#EF596D'
+color12='#CBA061'
+color13='#DC6796'
+color14='#5E91AC'
+color15='#dbd1ca'
 
 [hints]
 #font = Monospace 12
