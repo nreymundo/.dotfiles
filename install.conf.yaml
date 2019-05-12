@@ -10,6 +10,8 @@
     ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.zprofile: zprofile
+    ~/.zshrc: zshrc
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.i3: i3
@@ -22,3 +24,4 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [bootstrapping/extra_linking.sh, Linking files not uploaded to the repo]
   - [bootstrapping/install_neobundle.sh, Installing Vim plugin manager]
+  - [bootstrapping/get_antigen.sh, Installing ZSH plugin manager Antigen]

@@ -5,6 +5,7 @@ config/qutebrowser/colors.yml
 config/wallpaper
 vim/bundle
 vim/.netrwhist
+antigen.zsh
 
 
 ### Linux ###

@@ -5,6 +5,8 @@ filetype	plugin indent on
 syntax		on
 set		nocompatible               " Be iMproved
 set		number relativenumber
+set		nosmd
+set		noru
 
 " Required:
 set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -33,11 +35,11 @@ filetype plugin indent on
 NeoBundleCheck
 
 " Color theme
-colorscheme wal
+" colorscheme wal
 
 " Airline plugin settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
+let g:airline_theme='simple'
+"let g:airline_solarized_bg='dark'
