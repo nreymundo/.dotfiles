@@ -1,0 +1,24 @@
+#!/bin/sh
+
+TERMITE_CONFIG=$CONFIG/termite/config
+
+#Making sure pywal colors are sourced
+source $HOME/.cache/wal/colors.sh
+
+#Replacing Termite colors with the new ones from pywal
+sed -i "s/color0=.*/color0='`echo $color0`'/g" $TERMITE_CONFIG
+sed -i "s/color1=.*/color1='`echo $color1`'/g" $TERMITE_CONFIG
+sed -i "s/color2=.*/color2='`echo $color2`'/g" $TERMITE_CONFIG
+sed -i "s/color3=.*/color3='`echo $color3`'/g" $TERMITE_CONFIG
+sed -i "s/color4=.*/color4='`echo $color4`'/g" $TERMITE_CONFIG
+sed -i "s/color5=.*/color5='`echo $color5`'/g" $TERMITE_CONFIG
+sed -i "s/color6=.*/color6='`echo $color6`'/g" $TERMITE_CONFIG
+sed -i "s/color7=.*/color7='`echo $color7`'/g" $TERMITE_CONFIG
+sed -i "s/color8=.*/color8='`echo $color8`'/g" $TERMITE_CONFIG
+sed -i "s/color9=.*/color9='`echo $color9`'/g" $TERMITE_CONFIG
+sed -i "s/color10=.*/color10='`echo $color10`'/g" $TERMITE_CONFIG
+sed -i "s/color11=.*/color11='`echo $color11`'/g" $TERMITE_CONFIG
+sed -i "s/color12=.*/color12='`echo $color12`'/g" $TERMITE_CONFIG
+sed -i "s/color13=.*/color13='`echo $color13`'/g" $TERMITE_CONFIG
+sed -i "s/color14=.*/color14='`echo $color14`'/g" $TERMITE_CONFIG
+sed -i "s/color15=.*/color15='`echo $color15`'/g" $TERMITE_CONFIG

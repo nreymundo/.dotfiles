@@ -5,6 +5,7 @@ if [ -f /usr/bin/wal ]
 then
 	wal -c
 	wal -i $CONFIG/wallpaper -a $TERM_ALPHA -q -o wal-vtop
+	update_termite
 	qutebrowser_reload.py
 fi
 exit 0
