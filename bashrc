@@ -150,6 +150,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # Pywal theme
 (cat $HOME/.cache/wal/sequences &)
 source $HOME/.cache/wal/colors-tty.sh
+source $HOME/.cache/wal/colors.sh
 #wal -R -a "90" -q
 
 # System info with neofetch
