@@ -2,6 +2,7 @@
 .owncloudsync.log
 private_sync
 config/qutebrowser/colors.yml
+config/wallpaper
 vim/bundle
 vim/.netrwhist
 
