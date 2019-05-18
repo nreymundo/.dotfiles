@@ -2,20 +2,25 @@
 
 set -e
 
-HOST_ENTRY="192.168.1.2  vault"
+VAULT_IP="192.168.1.2"
 LOCATION_ON_VAULT="/mnt/user/syncthing/shared_configs"
 
-echo "Installing necessary packages and programs\n"
+PINENTRY_FILE="/usr/bin/pinentry-gnome3"
+PINENTRY_MAC_LINK="/usr/local/bin/pinentry-mac"
+
+echo "Installing necessary packages and programs"
 yay -S `cat packages_to_install`
 
-echo "Copying sensitive files from Vault\n"
-sudo echo ${HOST_ENTRY} >> /etc/hosts
-scp -r root@vault:${LOCATION_ON_VAULT} .
+echo "Copying sensitive files from Vault"
+scp -r root@${VAULT_IP}:${LOCATION_ON_VAULT} .
 mv shared_configs private_sync
 
-echo "Creating a pinentry-mac link so I don't have to change configs for unix\n"
-sudo ln -s /usr/bin/pinentry-gnome3 /usr/local/bin/pinentry-mac
+if [ ! -f ${PINENTRY_MAC_LINK} ] 
+then
+    echo "Creating a pinentry-mac link so I don't have to change configs for unix"
+    sudo ln -s ${PINENTRY_FILE} ${PINENTRY_MAC_LINK}
+fi
 
 read -n 1 -r -s -p $'If you want to overwrite existing config files you should manually delete them now.\nPress enter to continue...\n'
-echo "Running dotbot to link config files\n"
+echo "Running dotbot to link config files"
 ./dotbot_link
