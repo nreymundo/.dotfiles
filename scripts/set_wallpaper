@@ -7,5 +7,6 @@ then
 	wal -i $CONFIG/wallpaper -a $TERM_ALPHA -q -o wal-vtop
 	update_termite
 	qutebrowser_reload.py
+	betterlockscreen -u $CONFIG/wallpaper -b 0.5
 fi
 exit 0
