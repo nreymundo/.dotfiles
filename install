@@ -2,14 +2,20 @@
 
 set -e
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
+HOST_ENTRY="192.168.1.2  vault"
+LOCATION_ON_VAULT="/mnt/user/syncthing/shared_configs"
 
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+echo "Installing necessary packages and programs\n"
+yay -S `cat packages_to_install`
 
-cd "${BASEDIR}"
-git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive "${DOTBOT_DIR}"
+echo "Copying sensitive files from Vault\n"
+sudo echo ${HOST_ENTRY} >> /etc/hosts
+scp -r root@vault:${LOCATION_ON_VAULT} .
+mv shared_configs private_sync
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+echo "Creating a pinentry-mac link so I don't have to change configs for unix\n"
+sudo ln -s /usr/bin/pinentry-gnome3 /usr/local/bin/pinentry-mac
+
+read -n 1 -r -s -p $'If you want to overwrite existing config files you should manually delete them now.\nPress enter to continue...\n'
+echo "Running dotbot to link config files\n"
+./dotbot_link
