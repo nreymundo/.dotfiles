@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 DESKTOP=dauntless
 LAPTOP=vanguard
