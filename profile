@@ -12,6 +12,7 @@ export DOTFILES=$HOME/.dotfiles
 export SCRIPTS=$DOTFILES/scripts
 export I3_SCRIPTS=$SCRIPTS/i3blocks
 export CONFIG=$HOME/.config
+export DEFAULT_USER=`whoami`
 
 # PATH stuff
 export PATH=$SCRIPTS:$PATH
