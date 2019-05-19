@@ -1,0 +1,12 @@
+clear
+hstr
+r *
+cd ..
+ls -la
+git status
+r
+cd
+git add .
+hh
+ll
+ls

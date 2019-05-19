@@ -21,7 +21,7 @@ antigen bundle command-not-found
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-autosuggestions
+#antigen bundle zsh-users/zsh-autosuggestions
 
 # Load the theme.
 #antigen theme robbyrussell
@@ -33,6 +33,10 @@ antigen apply
 
 # Vi mode
 bindkey -v
+
+# HSTR config
+export HSTR_CONFIG=hicolor,no-confirm,blacklist,raw-history-view
+bindkey -s '^R' "hstr\n" # binds hstr to Ctrl-r
 
 # Pywal stuff
 (cat $HOME/.cache/wal/sequences &)

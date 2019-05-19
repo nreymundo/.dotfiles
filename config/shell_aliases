@@ -3,9 +3,11 @@ alias vtop='vtop --theme wal --no-mouse'
 alias r="ranger"
 alias sr="sudo ranger"
 alias v="vim"
+alias hh="hstr"
 
 # Config shortcuts
 alias cfi="$EDITOR $HOME/.i3/config"
+alias cfz="$EDITOR $HOME/.zshrc"
 alias cfb="$EDITOR $HOME/.bashrc"
 alias cfp="$EDITOR $HOME/.profile"
 alias cfv="$EDITOR $HOME/.vimrc"
