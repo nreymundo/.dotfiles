@@ -20,7 +20,7 @@ antigen bundle lein
 antigen bundle command-not-found
 
 # Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle zsh-users/zsh-syntax-highlighting
 #antigen bundle zsh-users/zsh-autosuggestions
 
 # Load the theme.
