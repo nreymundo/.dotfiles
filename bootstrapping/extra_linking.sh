@@ -14,3 +14,5 @@ ln -sfn $SYNC/taskbook $HOME/.taskbook
 ln -sfn $SYNC/rclone $CONFIG/rclone
 # Symlinking gpg keyring
 ln -sfn $SYNC/gnupg $HOME/.gnupg
+# Symlinking VPN config stuff
+ln -sfn $SYNC/vpn/providers $CONFIG/vpn
