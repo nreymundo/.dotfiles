@@ -168,8 +168,10 @@ font xft:DejaVuSansMono Nerd Font Mono 11
 #font pango:monospace 8
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
+new_window none
 new_window pixel 1
-new_float normal
+new_float none
+new_float pixel 1
 
 # Hide borders
 hide_edge_borders none
