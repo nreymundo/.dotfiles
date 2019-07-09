@@ -9,7 +9,8 @@ PINENTRY_FILE="/usr/bin/pinentry-gnome3"
 PINENTRY_MAC_LINK="/usr/local/bin/pinentry-mac"
 
 echo "Installing necessary packages and programs"
-yay -S `cat packages_to_install`
+for x in $(cat packages_to_install); do yay -S $x; done
+#yay -S `cat packages_to_install`
 
 echo "Copying sensitive files from Vault"
 scp -r root@${VAULT_IP}:${LOCATION_ON_VAULT} .
