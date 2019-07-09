@@ -31,13 +31,6 @@ antigen theme agnoster
 # Tell Antigen that you're done.
 antigen apply
 
-# Vi mode
-bindkey -v
-
-# HSTR config
-export HSTR_CONFIG=hicolor,no-confirm,blacklist,raw-history-view
-bindkey -s '^R' "hstr\n" # binds hstr to Ctrl-r
-
 # Pywal stuff
 (cat $HOME/.cache/wal/sequences &)
 source $HOME/.cache/wal/colors-tty.sh
