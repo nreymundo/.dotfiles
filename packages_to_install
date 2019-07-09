@@ -36,7 +36,6 @@ rofi
 ruby
 siji-git
 speedtest-cli
-steam-manjaro
 syncthing
 sysfsutils
 terminus-font
@@ -59,4 +58,4 @@ wine
 youtube-dl
 youtube-viewer
 zsh
-hstr-git
+steam
