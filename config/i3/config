@@ -3,6 +3,7 @@
 ######################################################################################
 
 set $lockscreen "betterlockscreen -l dim"
+set $screenoff "xset dpms force off"
 
 ######################################################################################
 ## Applications - Autostart + Shortcuts
@@ -34,6 +35,7 @@ bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 ### Multimedia keys
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10"
+bindsym XF86ScreenSaver exec $screenoff
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
