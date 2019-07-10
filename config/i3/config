@@ -23,11 +23,11 @@ exec --no-startup-id fusuma_start
 exec --no-startup-id dunst
 
 #### Application shortcuts
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec $TERMINAL
 bindsym $mod+d exec launcher
 bindsym $mod+F2 exec $BROWSER
 bindsym $mod+F4 exec $TERMINAL -e 'ranger'
-bindsym $mod+t exec --no-startup-id "pkill compton; exec notify-send 'Restarted Compton'"
+bindsym $mod+Shift+t exec --no-startup-id "pkill compton; exec notify-send 'Restarted Compton'"
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'Restarted Dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -42,6 +42,24 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
+
+######################################################################################
+## Applications - Dropdown Utilities
+######################################################################################
+
+set $dropdownTerminal "$TERMINAL -t 'dropdown_term' -e tmux"
+
+## Common settings
+for_window [title="dropdown_*"] floating enable
+for_window [title="dropdown_*"] move scratchpad
+for_window [title="dropdown_*"] sticky enable
+#for_window [title="dropdown_*"] scratchpad show
+
+## Terminal
+exec --no-startup-id $dropdownTerminal
+for_window [title="dropdown_term"] resize set 1200 500
+for_window [title="dropdown_term"] border pixel 3
+bindsym $mod+t [title="dropdown_term"] scratchpad show; [title="dropdown_term"] move position center
 
 ######################################################################################
 ## Applications - Window Rules
