@@ -4,6 +4,7 @@
 
 set $lockscreen "betterlockscreen -l dim && xset dpms force off"
 set $screenoff "xset dpms force off"
+set $launcher "rofi -modi drun -show drun"
 
 ######################################################################################
 ## Applications - Autostart + Shortcuts
@@ -23,7 +24,7 @@ exec --no-startup-id dunst
 
 #### Application shortcuts
 bindsym $mod+Return exec $TERMINAL
-bindsym $mod+d exec launcher
+bindsym $mod+d exec $launcher
 bindsym $mod+F2 exec $BROWSER
 bindsym $mod+F4 exec $TERMINAL -e 'ranger'
 bindsym $mod+Shift+t exec --no-startup-id "pkill compton; exec notify-send 'Restarted Compton'"

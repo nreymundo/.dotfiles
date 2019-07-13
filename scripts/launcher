@@ -1,4 +1,0 @@
-#!/bin/sh
-rofi -modi drun -show drun
-
-exit 0
