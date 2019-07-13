@@ -1,4 +1,0 @@
-if [ `command -v fusuma` ] 
-then
-	`which fusuma`
-fi
