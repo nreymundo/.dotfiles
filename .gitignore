@@ -3,6 +3,7 @@
 private_sync
 config/qutebrowser/colors.yml
 config/wallpaper
+config/systemd/user/default.target.wants
 vim/bundle
 vim/.netrwhist
 antigen.zsh
