@@ -10,9 +10,11 @@ set $launcher "rofi -modi drun -show drun"
 ## Applications - Autostart + Shortcuts
 ######################################################################################
 
+#### Stuff to run every time i3 refreshes
+exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys
+
 #### Autostart stuff
 exec --no-startup-id set_resolution
-exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option nodeadkeys
 exec --no-startup-id udiskie
 exec --no-startup-id set_wallpaper
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
