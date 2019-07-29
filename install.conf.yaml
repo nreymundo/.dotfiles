@@ -14,8 +14,7 @@
     ~/.zshrc: zshrc
     ~/.vim: vim
     ~/.vimrc: vimrc
-    ~/.i3: i3
-    ~/.hstr_blacklist: hstr_blacklist
+    ~/.pam_environment: .pam_environment
     ~/.config: 
       glob: true
       path: config/*
