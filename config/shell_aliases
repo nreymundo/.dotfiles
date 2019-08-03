@@ -16,6 +16,7 @@ alias cfs="$EDITOR $SCRIPTS"
 alias cfx="$EDITOR $HOME/.xinitrc"
 alias cfc="$EDITOR $CONFIG/compton.conf"
 alias cfa="$EDITOR $CONFIG/shell_aliases"
+alias cfpo="$EDITOR $CONFIG/polybar/config_`hostname`"
 
 # Misc
 alias cp="cp -i"
