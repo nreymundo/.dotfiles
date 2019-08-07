@@ -32,7 +32,7 @@
 !.config/*/*
 !.config/polybar/**
 !.config/ranger/**
-!.config/systemd/**
+!.config/systemd/user/*
 !.config/wal/**
 .config/qutebrowser/bookmarks
 .config/qutebrowser/colors.yml
