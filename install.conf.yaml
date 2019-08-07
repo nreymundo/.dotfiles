@@ -5,19 +5,19 @@
 - clean: ['~']
 
 - link:
-    ~/.xinitrc: xinitrc
-    ~/.Xresources: Xresources
-    ~/.profile: profile
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
-    ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
-    ~/.vim: vim
-    ~/.vimrc: vimrc
+    ~/.xinitrc: .xinitrc
+    ~/.Xresources: .Xresources
+    ~/.profile: .profile
+    ~/.bash_profile: .bash_profile
+    ~/.bashrc: .bashrc
+    ~/.zprofile: .zprofile
+    ~/.zshrc: .zshrc
+    ~/.vim: .vim
+    ~/.vimrc: .vimrc
     ~/.pam_environment: .pam_environment
     ~/.config: 
       glob: true
-      path: config/*
+      path: .config/*
       relink: true
 
 - shell:
