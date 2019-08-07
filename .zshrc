@@ -25,8 +25,8 @@ antigen bundle command-not-found
 
 # Load the theme.
 #antigen theme robbyrussell
-#antigen theme denysdovhan/spaceship-prompt
-antigen theme agnoster
+antigen theme denysdovhan/spaceship-prompt
+#antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
