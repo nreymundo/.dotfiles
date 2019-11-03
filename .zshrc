@@ -38,3 +38,4 @@ source $HOME/.cache/wal/colors.sh
 
 # System info with neofetch
 neofetch
+#pfetch
