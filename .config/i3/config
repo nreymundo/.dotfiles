@@ -25,12 +25,13 @@ exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id xautolock -time 10 -locker $lockscreen
 exec --no-startup-id /usr/bin/steam -silent %U
 exec --no-startup-id /usr/bin/unclutter
-exec --no-startup-id dunst
+#exec --no-startup-id dunst
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 
 #### Application shortcuts
 bindsym $mod+Return exec $TERMINAL
 bindsym $mod+d exec $launcher
-bindsym $mod+F2 exec $BROWSER
+bindsym $mod+F2 exec $BROWSER --force-dark-mode
 bindsym $mod+F4 exec $TERMINAL -e 'ranger'
 bindsym $mod+Shift+t exec --no-startup-id "pkill compton; exec notify-send 'Restarted Compton'"
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'Restarted Dunst'"
